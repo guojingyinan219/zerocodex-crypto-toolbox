@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ShieldCheck, WifiOff, Database, TriangleAlert } from '@lucide/vue'
+import { ShieldCheck, WifiOff, Database, TriangleAlert, HeartHandshake, LockKeyhole } from '@lucide/vue'
 </script>
 
 <template>
@@ -23,6 +23,21 @@ import { ShieldCheck, WifiOff, Database, TriangleAlert } from '@lucide/vue'
         <div><dt>ICP备案</dt><dd><a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">苏ICP备2026080292号-1</a></dd></div>
         <div><dt>联系邮箱</dt><dd><a href="mailto:zero@zerocodex.top">zero@zerocodex.top</a></dd></div>
       </dl>
+    </section>
+    <section class="support-section" aria-labelledby="support-title">
+      <div class="support-copy">
+        <div class="support-mark" aria-hidden="true"><HeartHandshake :size="25" /></div>
+        <p class="eyebrow">支持开源维护</p>
+        <h2 id="support-title">喜欢这个工具，欢迎赞赏作者</h2>
+        <p>每一份支持都会用于域名、服务器和工具的持续维护。赞赏完全自愿，不影响任何功能使用。</p>
+        <div class="support-privacy"><LockKeyhole :size="17" /><span>请勿在付款备注中填写证书、私钥、口令等敏感信息。</span></div>
+      </div>
+      <figure class="support-qr-card">
+        <div class="support-qr-frame">
+          <img src="/support-author-qr.png" width="640" height="640" loading="lazy" alt="赞赏作者二维码" />
+        </div>
+        <figcaption><strong>扫码赞赏</strong><span>感谢你对零码工作室的支持</span></figcaption>
+      </figure>
     </section>
   </div>
 </template>

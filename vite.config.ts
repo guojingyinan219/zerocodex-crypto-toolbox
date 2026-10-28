@@ -7,7 +7,7 @@ export default defineConfig({
     vue(),
     VitePWA({
       registerType: 'autoUpdate',
-      includeAssets: ['favicon.svg'],
+      includeAssets: ['favicon.svg', 'support-author-qr.png'],
       manifest: {
         name: '零码密码与证书工具箱',
         short_name: '零码密码工具箱',

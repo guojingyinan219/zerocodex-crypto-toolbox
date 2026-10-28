@@ -324,6 +324,20 @@ h1, h2, h3 { margin: 0; letter-spacing: 0; }
 .legal-section dd { color: var(--muted); }
 .legal-section a { color: var(--blue); text-decoration: none; }
 .legal-section a:hover { text-decoration: underline; text-underline-offset: 3px; }
+.support-section { position: relative; min-height: 320px; display: grid; grid-template-columns: minmax(0, 1fr) 270px; align-items: center; gap: clamp(28px, 5vw, 72px); margin-top: 20px; padding: clamp(28px, 4vw, 48px); overflow: hidden; color: #183247; background: linear-gradient(135deg, #e8f3fb 0%, #f4f9fc 58%, #e7f3ed 100%); border: 1px solid #cbdde8; border-radius: 8px; box-shadow: var(--shadow); }
+.support-copy { position: relative; z-index: 1; max-width: 680px; }
+.support-mark { width: 46px; height: 46px; display: grid; place-items: center; margin-bottom: 20px; color: #fff; background: var(--accent); border-radius: 7px; box-shadow: 0 10px 24px rgb(22 114 74 / 18%); }
+.support-copy .eyebrow { margin-bottom: 7px; color: var(--blue); }
+.support-copy h2 { max-width: 560px; font-size: clamp(21px, 2.2vw, 28px); line-height: 1.25; font-weight: 680; }
+.support-copy > p:not(.eyebrow) { max-width: 620px; margin-top: 12px; color: #526b7d; font-size: 13px; line-height: 1.75; }
+.support-privacy { width: fit-content; max-width: 100%; display: flex; align-items: center; gap: 8px; margin-top: 20px; padding: 9px 12px; color: #315f4d; background: rgb(255 255 255 / 62%); border: 1px solid rgb(22 114 74 / 18%); border-radius: 6px; font-size: 11px; line-height: 1.55; }
+.support-privacy svg { flex: 0 0 auto; }
+.support-qr-card { position: relative; z-index: 1; width: 270px; margin: 0; padding: 14px 14px 16px; background: rgb(255 255 255 / 94%); border: 1px solid rgb(173 196 209 / 80%); border-radius: 8px; box-shadow: 0 18px 42px rgb(34 72 95 / 13%); }
+.support-qr-frame { padding: 9px; background: #fff; border: 1px solid #e0e8ed; border-radius: 5px; }
+.support-qr-frame img { width: 100%; height: auto; display: block; aspect-ratio: 1; }
+.support-qr-card figcaption { display: flex; flex-direction: column; align-items: center; gap: 3px; padding-top: 12px; text-align: center; }
+.support-qr-card figcaption strong { color: #243c4c; font-size: 13px; }
+.support-qr-card figcaption span { color: var(--subtle); font-size: 10px; }
 .visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
 
 .overview-view { width: min(calc(100% - 48px), 1320px); margin: 0 auto; padding: 30px 0 72px; }
@@ -684,6 +698,12 @@ h1, h2, h3 { margin: 0; letter-spacing: 0; }
   .principle-grid { grid-template-columns: 1fr; }
   .principle-grid article { min-height: 120px; border-right: 0; border-bottom: 1px solid var(--line); }
   .principle-grid article:last-child { border-bottom: 0; }
+  .support-section { grid-template-columns: 1fr; justify-items: center; gap: 24px; padding: 28px; }
+  .support-copy { width: 100%; text-align: center; }
+  .support-mark { margin-inline: auto; }
+  .support-copy > p:not(.eyebrow) { margin-inline: auto; }
+  .support-privacy { margin-inline: auto; text-align: left; }
+  .support-qr-card { width: min(270px, 100%); }
   .common-command-bar { align-items: stretch; }
   .tool-context { flex-basis: 100%; min-width: 0; }
   .common-command-bar > .button.primary { margin-left: auto; }
@@ -738,5 +758,9 @@ h1, h2, h3 { margin: 0; letter-spacing: 0; }
   .agreement-fields { grid-template-columns: 1fr; }
   .agreement-fields .span-2 { grid-column: auto; }
   .legal-section dl > div { grid-template-columns: 92px minmax(0, 1fr); }
+  .support-section { margin-top: 12px; padding: 22px 16px; }
+  .support-copy h2 { font-size: 21px; }
+  .support-copy > p:not(.eyebrow) { font-size: 12px; line-height: 1.65; }
+  .support-privacy { align-items: flex-start; }
   .random-tool-bar { align-items: stretch; flex-direction: column; }.random-tool-bar .segmented { width: 100%; }.random-field-grid { grid-template-columns: 1fr; }.random-field-grid label:last-child { grid-column: auto; }.random-settings { padding: 16px; }
 }
