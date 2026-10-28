@@ -1,0 +1,11 @@
+node_modules
+dist
+.git
+.env
+.env.*
+!/.env.production
+desktop-go
+desktop-tauri-tools
+src-tauri
+scripts/remote_deploy.py
+*.log

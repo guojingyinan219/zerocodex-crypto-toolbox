@@ -1,0 +1,13 @@
+[package]
+name = "zerocodex-crypto-toolbox"
+version = "0.1.0"
+description = "密码与证书工具箱桌面客户端"
+authors = ["ZeroCodeX Studio <zero@zerocodex.top>"]
+license = "MIT"
+edition = "2021"
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }

@@ -1,0 +1,28 @@
+<script setup lang="ts">
+import { ShieldCheck, WifiOff, Database, TriangleAlert } from '@lucide/vue'
+</script>
+
+<template>
+  <div class="tool-view about-view">
+    <header class="page-header compact-header"><div><p class="eyebrow">关于与隐私</p><h1>工具在本地运行，材料不出浏览器</h1><p>面向开发、运维与测试人员的国密、RSA 与通用 PKI 工作台。</p></div></header>
+    <section class="principle-grid">
+      <article><ShieldCheck :size="22" /><h2>不上传</h2><p>证书、CSR 和私钥不经过后端接口。</p></article>
+      <article><Database :size="22" /><h2>不持久化</h2><p>不写入 localStorage、IndexedDB、Cookie 或分析日志。</p></article>
+      <article><WifiOff :size="22" /><h2>可离线</h2><p>首次载入后，核心页面由 PWA 缓存供内网和断网环境使用。</p></article>
+    </section>
+    <section class="about-section">
+      <h2>能力边界</h2>
+      <div class="inline-alert warn"><TriangleAlert :size="18" /><span>当前版本使用浏览器端 TypeScript 国密内核，已实现 SM2/SM3 生成、签名和常用 ASN.1/PKI 操作。与 GmSSL 3.x / 铜锁的逐版本命令行互操作矩阵仍属于 M0 验证项，生产使用前应以目标运行环境复核。</span></div>
+      <p>本工具可生成私有 PKI 测试链，但不提供公共 CA 服务，也不建立或代表任何信任关系。PFX、JKS、CMS、加密 PKCS#8 与证书链材料均在浏览器本地处理；网站 TLS/TLCP 探针只向本站服务端提交待检测域名。</p>
+    </section>
+    <section class="about-section legal-section" aria-labelledby="legal-title">
+      <h2 id="legal-title">网站归属与备案</h2>
+      <dl>
+        <div><dt>产品归属</dt><dd><a href="https://www.zerocodex.top/" target="_blank" rel="noopener noreferrer">零码工作室</a></dd></div>
+        <div><dt>网站域名</dt><dd class="mono">crypto.zerocodex.top</dd></div>
+        <div><dt>ICP备案</dt><dd><a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">苏ICP备2026080292号-1</a></dd></div>
+        <div><dt>联系邮箱</dt><dd><a href="mailto:zero@zerocodex.top">zero@zerocodex.top</a></dd></div>
+      </dl>
+    </section>
+  </div>
+</template>

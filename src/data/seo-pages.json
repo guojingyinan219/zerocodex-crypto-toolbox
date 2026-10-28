@@ -1,0 +1,122 @@
+{
+  "home": {
+    "slug": "",
+    "title": "GMSSL 在线国密与证书工具箱 - SM2、SM3、SM4、RSA、PKI",
+    "description": "免费在线 GMSSL 国密、密码学与证书工具集，支持证书解析与生成、SM2、SM3、SM4、RSA、密钥格式转换、网站 SSL/TLS 安全检测和常用编码工具。敏感材料默认仅在浏览器本地处理。",
+    "keywords": "密码学工具箱,国密工具箱,GMSSL在线工具,SM2,SM3,SM4,RSA,证书解析,证书生成,PKI,SSL检测"
+  },
+  "workbench": {
+    "slug": "certificate-parser",
+    "title": "在线证书解析工具 - X.509、CSR、公钥与私钥识别",
+    "description": "在线解析 X.509 证书、PKCS#10 CSR、公钥和私钥，支持国密 SM2、RSA 与 ECC，显示算法、有效期、指纹和公私钥多种格式。材料仅在浏览器本地处理。",
+    "keywords": "证书解析,在线证书解析,X.509,CSR解析,SM2证书,RSA证书,私钥解析,公钥解析"
+  },
+  "doctor": {
+    "slug": "pem-base64-format-checker",
+    "title": "PEM、Base64 与 Hex 格式检查修复工具",
+    "description": "在线检查和规范化 PEM、Base64、Hex 格式，定位头尾标签、换行、BOM、空白和编码问题，适合证书、CSR、公钥和私钥材料排错。",
+    "keywords": "PEM格式检查,Base64检查,PEM修复,证书格式,私钥格式,Hex格式检查"
+  },
+  "base64": {
+    "slug": "base64-encoder-decoder",
+    "title": "Base64 在线编码与解码工具",
+    "description": "免费在线完成 UTF-8 文本与 Base64、Base64URL 的编码和解码，所有文本仅在当前浏览器本地处理。",
+    "keywords": "Base64编码,Base64解码,Base64URL,在线Base64,UTF-8 Base64"
+  },
+  "url": {
+    "slug": "url-encoder-decoder",
+    "title": "URL 在线编码与解码工具",
+    "description": "在线进行 URL 组件编码和解码，处理中文、特殊字符与百分号转义，内容仅在浏览器本地处理。",
+    "keywords": "URL编码,URL解码,百分号编码,encodeURIComponent,decodeURIComponent"
+  },
+  "hex": {
+    "slug": "text-hex-converter",
+    "title": "文本与 Hex 十六进制在线转换工具",
+    "description": "在线完成 UTF-8 文本与十六进制 Hex 互转，支持连续 Hex 以及带空格、冒号和换行的十六进制输入。",
+    "keywords": "文本转Hex,Hex转文本,十六进制转换,UTF-8 Hex,在线Hex"
+  },
+  "json": {
+    "slug": "json-formatter",
+    "title": "JSON 在线格式化、校验与压缩工具",
+    "description": "在线格式化、校验和压缩 JSON 文本，快速定位语法问题，数据仅在当前浏览器中处理。",
+    "keywords": "JSON格式化,JSON校验,JSON压缩,在线JSON,JSON美化"
+  },
+  "digest": {
+    "slug": "sm3-sha-md5-digest",
+    "title": "SM3、SHA、MD5 在线摘要计算工具",
+    "description": "在线计算 SM3、SHA-1、SHA-224、SHA-256、SHA-384、SHA-512、MD4 和 MD5 文本摘要。",
+    "keywords": "SM3在线,SHA256在线,MD5在线,文本摘要,哈希计算,SHA512"
+  },
+  "uuid": {
+    "slug": "uuid-generator",
+    "title": "UUID v4 在线生成工具",
+    "description": "使用浏览器加密随机数免费生成 UUID v4，适合请求标识、测试数据和本地开发。",
+    "keywords": "UUID生成,UUID v4,在线UUID,随机标识,GUID生成"
+  },
+  "random": {
+    "slug": "secure-random-number-generator",
+    "title": "安全随机字符串、随机数与随机字节在线生成器",
+    "description": "使用浏览器 Web Crypto 安全随机源生成指定长度的大小写字母、数字、特殊字符随机字符串，也支持无偏差随机整数及 Hex、Base64、Base64URL 随机字节。",
+    "keywords": "随机字符串生成器,32位随机数,安全随机数,在线随机数,字母数字随机,特殊字符随机,随机字节,随机Hex,随机Base64,Web Crypto,CSPRNG"
+  },
+  "tls": {
+    "slug": "ssl-tls-security-check",
+    "title": "网站 SSL TLS 安全在线检测工具",
+    "description": "在线检测网站证书链、TLS 1.0-1.3、密码套件、HSTS、HTTP/2、CAA、RSA/ECC 双证书、TLCP 与国密双证书能力。",
+    "keywords": "SSL检测,TLS检测,网站安全检测,证书链检测,密码套件,HSTS,HTTP2,CAA,TLCP,国密双证书"
+  },
+  "asn1": {
+    "slug": "asn1-der-parser",
+    "title": "在线 ASN.1 DER 解析器与结构查看器",
+    "description": "在线查看 ASN.1 DER 结构树、Tag、长度、字节偏移和 Hex 内容，用于分析 X.509 证书、CSR、PKCS 密钥和国密数据结构。",
+    "keywords": "ASN.1解析,DER解析,在线ASN1查看器,X.509结构,证书结构,PKCS解析"
+  },
+  "match": {
+    "slug": "certificate-key-match",
+    "title": "证书、CSR 与私钥公钥匹配校验工具",
+    "description": "在线校验证书、CSR、公钥和私钥是否属于同一密钥对，支持 SM2、RSA 与常用椭圆曲线，材料不会上传服务器。",
+    "keywords": "证书私钥匹配,CSR匹配,公私钥校验,SM2密钥匹配,RSA密钥匹配"
+  },
+  "generate": {
+    "slug": "sm2-rsa-certificate-generator",
+    "title": "SM2、RSA 密钥 CSR 与证书在线生成工具",
+    "description": "在线生成 SM2、RSA、P-256、P-384 密钥对、PKCS#10 CSR、自签证书及 CA 证书链，支持填写或自动生成密钥材料。",
+    "keywords": "SM2密钥生成,RSA密钥生成,CSR生成,自签证书生成,X.509证书,国密证书,CA证书"
+  },
+  "convert": {
+    "slug": "pem-der-key-converter",
+    "title": "PEM、DER、Base64、Hex 与 SM2 X/Y/D 转换工具",
+    "description": "在线转换 PEM、DER、Base64 和 Hex，并将 SM2 公钥 X、Y 与私钥 D 转换为标准 SPKI、PKCS#8 PEM 格式。",
+    "keywords": "PEM转换,DER转换,Base64转换,Hex转换,SM2 X Y D,SM2 PEM,PKCS8"
+  },
+  "gm": {
+    "slug": "gmssl-sm2-sm3-tools",
+    "title": "SM2 签名加密、SM3 摘要与国密密钥协商工具",
+    "description": "在线执行 SM2 签名验签、加密解密、SM3 摘要、HMAC-SM3、SM2 KDF、ZA 摘要和带密钥确认的 SM2 双方密钥协商。",
+    "keywords": "SM2签名,SM2验签,SM2加密,SM2解密,SM3在线,HMAC-SM3,SM2 KDF,SM2密钥协商,GMSSL"
+  },
+  "symmetric": {
+    "slug": "sm4-aes-encryption",
+    "title": "SM4、AES、DES、3DES 在线加解密与 MAC 工具",
+    "description": "在线执行 SM4、AES、DES、3DES 的 ECB、CBC、CTR、CFB、OFB、GCM、CCM 加解密，并支持 CMAC、GMAC、CBC-MAC、X9.19 MAC、KCV 和数据异或。",
+    "keywords": "SM4在线加密,AES在线加密,SM4 GCM,SM4 CCM,SM4 CMAC,GMAC,DES,3DES,CBC-MAC,X9.19 MAC,KCV"
+  },
+  "common": {
+    "slug": "base64-encoder-decoder",
+    "title": "Base64、格式体检、网站安全与摘要在线工具",
+    "description": "在线完成 Base64、URL、Hex 转换、PEM 格式体检、JSON 格式化、网站 TLS 安全检查、SM3、SHA、MD5 摘要、UUID 与安全随机数生成。",
+    "keywords": "Base64转换,PEM格式检查,网站安全检测,SSL检测,URL编码,Hex转换,JSON格式化,SM3,SHA256,UUID生成,随机数生成"
+  },
+  "oids": {
+    "slug": "cryptography-oid-dictionary",
+    "title": "国密与通用密码算法 OID 在线查询字典",
+    "description": "查询 SM2、SM3、SM4、RSA、ECC、EdDSA、DH、AES、KDF、PKCS、X.509 与后量子算法 OID，包含标准来源和用途说明。",
+    "keywords": "OID查询,国密OID,RSA OID,ECC OID,AES OID,SM2 OID,PKCS OID,X.509 OID,ML-KEM,ML-DSA"
+  },
+  "about": {
+    "slug": "about",
+    "title": "关于零码密码与证书工具箱",
+    "description": "零码密码与证书工具箱由零码工作室开发维护，提供国密算法、PKI、SSL/TLS 与编码转换能力。了解隐私策略、安全边界、离线能力和备案信息。",
+    "keywords": "零码密码与证书工具箱,零码工作室,GMSSL工具,国密工具箱,本地密码工具,隐私安全,苏ICP备2026080292号-1"
+  }
+}

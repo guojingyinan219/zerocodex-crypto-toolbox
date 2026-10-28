@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="免费在线 GMSSL 国密、密码学与证书工具箱，支持 SM2、SM3、SM4、RSA、证书和 CSR 解析生成、PKI、SSL/TLS 安全检测及编码转换。敏感材料默认仅在浏览器本地处理。" />
+    <meta name="keywords" content="密码学工具箱,国密工具箱,GMSSL在线工具,SM2,SM3,SM4,RSA,证书解析,CSR生成,PKI,SSL检测,TLS检测" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="application-name" content="零码密码与证书工具箱" />
+    <meta name="author" content="零码工作室" />
+    <meta name="apple-mobile-web-app-title" content="零码密码工具箱" />
+    <meta name="theme-color" content="#b42318" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="zh_CN" />
+    <meta property="og:site_name" content="零码密码与证书工具箱" />
+    <meta property="og:title" content="GMSSL 在线国密与证书工具箱 - SM2/SM3/SM4、RSA、PKI" />
+    <meta property="og:description" content="在线完成国密算法、RSA 证书、CSR、PKI、SSL/TLS 安全检测和编码转换，敏感材料默认只在浏览器本地处理。" />
+    <meta property="og:url" content="https://crypto.zerocodex.top/" />
+    <meta property="og:image" content="https://crypto.zerocodex.top/pwa-512.svg" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="GMSSL 在线国密与证书工具箱" />
+    <meta name="twitter:description" content="SM2、SM3、SM4、RSA、证书与 CSR、PKI、SSL/TLS 和编码转换在线工具。" />
+    <meta name="twitter:image" content="https://crypto.zerocodex.top/pwa-512.svg" />
+    <link rel="icon" href="/favicon.svg" />
+    <link rel="canonical" href="https://crypto.zerocodex.top/" />
+    <link rel="alternate" hreflang="zh-CN" href="https://crypto.zerocodex.top/" />
+    <link rel="alternate" hreflang="x-default" href="https://crypto.zerocodex.top/" />
+    <style id="boot-style">
+      #app-boot{position:fixed;inset:0;z-index:9999;display:grid;place-items:center;background:#f2f6fb;opacity:1;transition:opacity .18s ease}
+      #app-boot .boot-core{display:grid;justify-items:center;gap:14px}
+      #app-boot img{width:46px;height:46px;filter:drop-shadow(0 7px 16px rgb(21 25 23 / 12%))}
+      #app-boot .boot-track{width:74px;height:2px;overflow:hidden;background:#d7e1e9;border-radius:2px}
+      #app-boot .boot-progress{display:block;width:42%;height:100%;background:#16724a;animation:boot-slide .9s ease-in-out infinite}
+      html.app-ready #app-boot{opacity:0;pointer-events:none}
+      @keyframes boot-slide{0%{transform:translateX(-110%)}50%{transform:translateX(75%)}100%{transform:translateX(240%)}}
+      @media(prefers-reduced-motion:reduce){#app-boot{transition:none}#app-boot .boot-progress{animation:none;width:100%}}
+    </style>
+    <title>GMSSL 在线国密与证书工具箱 - SM2/SM3/SM4、RSA、PKI | 零码密码与证书工具箱</title>
+    <script id="seo-schema" type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://www.zerocodex.top/#organization",
+            "name": "零码工作室",
+            "url": "https://www.zerocodex.top/"
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://crypto.zerocodex.top/#website",
+            "name": "零码密码与证书工具箱",
+            "alternateName": ["密码证书工具箱", "GMSSL 在线工具", "国密工具箱"],
+            "url": "https://crypto.zerocodex.top/",
+            "inLanguage": "zh-CN",
+            "publisher": { "@id": "https://www.zerocodex.top/#organization" }
+          },
+          {
+            "@type": "WebApplication",
+            "@id": "https://crypto.zerocodex.top/#application",
+            "name": "零码密码与证书工具箱",
+            "url": "https://crypto.zerocodex.top/",
+            "description": "浏览器本地运行的 SM2、SM3、SM4、RSA、证书、CSR、PKI、SSL/TLS 安全检测与编码转换工具。",
+            "applicationCategory": "SecurityApplication",
+            "operatingSystem": "Any",
+            "inLanguage": "zh-CN",
+            "isAccessibleForFree": true,
+            "creator": { "@id": "https://www.zerocodex.top/#organization" },
+            "isPartOf": { "@id": "https://crypto.zerocodex.top/#website" },
+            "offers": { "@type": "Offer", "price": "0", "priceCurrency": "CNY" }
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <div id="app-boot" role="status" aria-label="正在打开密码与证书工具箱">
+      <div class="boot-core"><img src="/favicon.svg" alt="" /><span class="boot-track"><span class="boot-progress"></span></span></div>
+    </div>
+    <noscript><style>#app-boot{display:none}</style></noscript>
+    <div id="app">
+      <main>
+        <h1>GMSSL 在线国密与证书工具箱</h1>
+        <p>免费提供 SM2、SM3、SM4、RSA、AES、证书与 CSR 解析生成、PKI、SSL/TLS 安全检测、ASN.1 查看以及 PEM、DER、Base64、Hex 转换。</p>
+        <p>所有证书、私钥和输入材料仅在当前浏览器本地处理，不上传服务器。</p>
+        <nav aria-label="在线密码工具">
+          <a href="/tools/certificate-parser/">X.509、CSR、公钥与私钥在线解析</a>
+          <a href="/tools/sm2-rsa-certificate-generator/">SM2、RSA 密钥 CSR 与证书生成</a>
+          <a href="/tools/gmssl-sm2-sm3-tools/">SM2 签名加密与 SM3 摘要工具</a>
+          <a href="/tools/sm4-aes-encryption/">SM4、AES 在线加解密与 MAC</a>
+          <a href="/tools/ssl-tls-security-check/">网站 SSL/TLS 与国密 TLCP 安全检测</a>
+          <a href="/tools/asn1-der-parser/">ASN.1 DER 在线解析器</a>
+          <a href="/tools/pem-der-key-converter/">PEM、DER 与 SM2 X/Y/D 转换</a>
+          <a href="/tools/base64-encoder-decoder/">Base64 在线编码与解码</a>
+          <a href="/tools/secure-random-number-generator/">安全随机字符串、随机数与随机字节生成</a>
+          <a href="/tools/cryptography-oid-dictionary/">国密与通用密码 OID 查询</a>
+        </nav>
+      </main>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

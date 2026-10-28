@@ -1,0 +1,10 @@
+services:
+  crypto-toolbox:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: zerocodex/crypto-toolbox:latest
+    container_name: crypto-toolbox
+    restart: unless-stopped
+    ports:
+      - "${BIND_ADDRESS:-127.0.0.1}:${PORT:-8088}:8080"
