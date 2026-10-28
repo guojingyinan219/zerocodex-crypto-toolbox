@@ -15,15 +15,6 @@ import { ShieldCheck, WifiOff, Database, TriangleAlert, HeartHandshake, LockKeyh
       <div class="inline-alert warn"><TriangleAlert :size="18" /><span>当前版本使用浏览器端 TypeScript 国密内核，已实现 SM2/SM3 生成、签名和常用 ASN.1/PKI 操作。与 GmSSL 3.x / 铜锁的逐版本命令行互操作矩阵仍属于 M0 验证项，生产使用前应以目标运行环境复核。</span></div>
       <p>本工具可生成私有 PKI 测试链，但不提供公共 CA 服务，也不建立或代表任何信任关系。PFX、JKS、CMS、加密 PKCS#8 与证书链材料均在浏览器本地处理；网站 TLS/TLCP 探针只向本站服务端提交待检测域名。</p>
     </section>
-    <section class="about-section legal-section" aria-labelledby="legal-title">
-      <h2 id="legal-title">网站归属与备案</h2>
-      <dl>
-        <div><dt>产品归属</dt><dd><a href="https://www.zerocodex.top/" target="_blank" rel="noopener noreferrer">零码工作室</a></dd></div>
-        <div><dt>网站域名</dt><dd class="mono">crypto.zerocodex.top</dd></div>
-        <div><dt>ICP备案</dt><dd><a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">苏ICP备2026080292号-1</a></dd></div>
-        <div><dt>联系邮箱</dt><dd><a href="mailto:zero@zerocodex.top">zero@zerocodex.top</a></dd></div>
-      </dl>
-    </section>
     <section class="support-section" aria-labelledby="support-title">
       <div class="support-copy">
         <div class="support-mark" aria-hidden="true"><HeartHandshake :size="25" /></div>
@@ -38,6 +29,15 @@ import { ShieldCheck, WifiOff, Database, TriangleAlert, HeartHandshake, LockKeyh
         </div>
         <figcaption><strong>扫码赞赏</strong><span>感谢你对零码工作室的支持</span></figcaption>
       </figure>
+    </section>
+    <section class="about-section legal-section" aria-labelledby="legal-title">
+      <h2 id="legal-title">网站归属与备案</h2>
+      <dl>
+        <div><dt>产品归属</dt><dd><a href="https://www.zerocodex.top/" target="_blank" rel="noopener noreferrer">零码工作室</a></dd></div>
+        <div><dt>网站域名</dt><dd class="mono">crypto.zerocodex.top</dd></div>
+        <div><dt>ICP备案</dt><dd><a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">苏ICP备2026080292号-1</a></dd></div>
+        <div><dt>联系邮箱</dt><dd><a href="mailto:zero@zerocodex.top">zero@zerocodex.top</a></dd></div>
+      </dl>
     </section>
   </div>
 </template>
