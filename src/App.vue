@@ -14,7 +14,8 @@ import {
   Info,
   LockKeyhole,
   House,
-  Dices
+  Dices,
+  GitFork
 } from '@lucide/vue'
 import OverviewView from './tools/OverviewView.vue'
 import WorkbenchView from './tools/WorkbenchView.vue'
@@ -135,6 +136,10 @@ watch(active, updateSeoMetadata, { immediate: true })
           <LockKeyhole :size="17" />
           <span><strong>本地处理</strong><small>敏感材料不上传</small></span>
         </div>
+        <a class="top-action" href="https://github.com/guojingyinan219/zerocodex-crypto-toolbox" target="_blank" rel="noopener noreferrer" aria-label="在 GitHub 查看开源代码" title="在 GitHub 查看开源代码">
+          <GitFork :size="17" />
+          <span>开源代码</span>
+        </a>
         <a class="top-action" :class="{ active: active === 'about' }" :href="getToolHref('about')" :aria-current="active === 'about' ? 'page' : undefined" @click.prevent="navigate('about')">
           <Info :size="17" />
           <span>关于</span>
