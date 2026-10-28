@@ -167,6 +167,7 @@ watch(active, updateSeoMetadata, { immediate: true })
         <div class="product-owner">
           <span>© 2026</span>
           <a href="https://www.zerocodex.top/" target="_blank" rel="noopener noreferrer">零码工作室旗下产品</a>
+          <a href="https://github.com/guojingyinan219/zerocodex-crypto-toolbox" target="_blank" rel="noopener noreferrer">GitHub 开源仓库</a>
         </div>
         <div class="product-legal">
           <span>零码密码与证书工具箱</span>

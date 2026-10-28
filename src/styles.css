@@ -67,6 +67,7 @@ h1, h2, h3 { margin: 0; letter-spacing: 0; }
 .app-main { flex: 1 1 auto; min-width: 0; min-height: 0; display: flex; flex-direction: column; background: transparent; }
 .product-footer { width: min(1120px, calc(100% - 48px)); min-height: 58px; display: flex; align-items: center; justify-content: space-between; gap: 18px; margin: auto auto 0; padding: 18px 0; color: var(--muted); border-top: 1px solid var(--line); font-size: 11px; }
 .product-footer > div { display: flex; align-items: center; gap: 10px; min-width: 0; }
+.product-owner { flex-wrap: wrap; }
 .product-footer a { color: #435249; text-decoration: none; }
 .product-footer a:hover { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
 .product-owner span, .product-legal span { white-space: nowrap; }
@@ -321,7 +322,7 @@ h1, h2, h3 { margin: 0; letter-spacing: 0; }
 .legal-section dl > div:last-child { border-bottom: 0; }
 .legal-section dt, .legal-section dd { margin: 0; padding: 10px 13px; font-size: 12px; }
 .legal-section dt { color: var(--ink); background: var(--surface-alt); font-weight: 700; }
-.legal-section dd { color: var(--muted); }
+.legal-section dd { color: var(--muted); overflow-wrap: anywhere; }
 .legal-section a { color: var(--blue); text-decoration: none; }
 .legal-section a:hover { text-decoration: underline; text-underline-offset: 3px; }
 .support-section { position: relative; min-height: 320px; display: grid; grid-template-columns: minmax(0, 1fr) 270px; align-items: center; gap: clamp(28px, 5vw, 72px); margin-top: 20px; padding: clamp(28px, 4vw, 48px); overflow: hidden; color: #183247; background: linear-gradient(135deg, #e8f3fb 0%, #f4f9fc 58%, #e7f3ed 100%); border: 1px solid #cbdde8; border-radius: 8px; box-shadow: var(--shadow); }

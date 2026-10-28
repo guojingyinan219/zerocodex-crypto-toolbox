@@ -35,6 +35,7 @@ import { ShieldCheck, WifiOff, Database, TriangleAlert, HeartHandshake, LockKeyh
       <dl>
         <div><dt>产品归属</dt><dd><a href="https://www.zerocodex.top/" target="_blank" rel="noopener noreferrer">零码工作室</a></dd></div>
         <div><dt>网站域名</dt><dd class="mono">crypto.zerocodex.top</dd></div>
+        <div><dt>开源仓库</dt><dd><a href="https://github.com/guojingyinan219/zerocodex-crypto-toolbox" target="_blank" rel="noopener noreferrer">github.com/guojingyinan219/zerocodex-crypto-toolbox</a>（MIT License）</dd></div>
         <div><dt>ICP备案</dt><dd><a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">苏ICP备2026080292号-1</a></dd></div>
         <div><dt>联系邮箱</dt><dd><a href="mailto:zero@zerocodex.top">zero@zerocodex.top</a></dd></div>
       </dl>
