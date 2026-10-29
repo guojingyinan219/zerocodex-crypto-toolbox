@@ -35,7 +35,7 @@ defineEmits<{ open: [id: ToolId] }>()
 const certificateTools: ToolCard[] = [
   { id: 'workbench', title: '证书工作台', description: '识别并解析 X.509 证书、CSR、公钥与私钥，集中查看算法、指纹和密钥材料。', meta: 'SM2 / RSA / ECC', icon: ScanSearch, tone: 'green', featured: true, label: '核心入口' },
   { id: 'generate', title: '证书与密钥生成', description: '生成密钥对、CSR、自签证书及完整 CA 签发链。', meta: 'CSR / CA / PKCS#8', icon: KeyRound, tone: 'blue' },
-  { id: 'match', title: '材料匹配校验', description: '确认四类材料是否属于同一密钥体系。', meta: '证书 / CSR / 公私钥', icon: BadgeCheck, tone: 'amber' },
+  { id: 'match', title: '证书与密钥匹配检查', description: '检查证书、CSR、公钥和私钥是否相互配套。', meta: '证书 / CSR / 公钥 / 私钥', icon: BadgeCheck, tone: 'amber' },
   { id: 'asn1', title: 'ASN.1 查看器', description: '逐层检查 DER 节点、长度、偏移与原始字节。', meta: 'DER / TLV / Hex', icon: Braces, tone: 'ink' },
   { id: 'convert', title: '密钥格式转换', description: '在 PEM、DER、Base64、Hex 与 SM2 X/Y/D 之间转换。', meta: 'PEM / DER / X·Y·D', icon: ArrowRightLeft, tone: 'green' }
 ]
